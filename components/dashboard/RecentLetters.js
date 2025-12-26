@@ -13,21 +13,12 @@ export default function RecentLetters() {
   const { data: letters = [], error, isLoading } = useSWR(
     "/api/surat/recent",
     fetcher,
-<<<<<<< HEAD
     { refreshInterval: 5000 } 
   );
 
   const getAvatar = (jenis) => {
     if (jenis === "Formal") return "/images/scroll-text.png";
     if (jenis === "NonFormal") return "/images/loader-pinwheel.png";
-=======
-    { refreshInterval: 5000 } // 🔥 auto refetch tiap 5 detik
-  );
-
-  const getAvatar = (jenis) => {
-    if (jenis === "Formal") return "/images/Diluc.png";
-    if (jenis === "NonFormal") return "/images/Tartaglia.png";
->>>>>>> ac4dc7b032a8defcd42a1ef64d5bc83fd45740e0
     return "/images/default-avatar.png";
   };
 
