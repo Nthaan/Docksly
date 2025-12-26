@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client";
 import React from "react";
 import { FileText } from "lucide-react";
@@ -11,4 +12,12 @@ export default function Footer() {
       </div>
     </footer>
   );
+=======
+import React from 'react'
+
+export default function Footer() {
+  return (
+    <div>Footer</div>
+  )
+>>>>>>> ac4dc7b032a8defcd42a1ef64d5bc83fd45740e0
 }
