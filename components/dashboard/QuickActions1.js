@@ -1,17 +1,17 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Form from "../dashboard/Form"; // pastikan path sesuai
+import Form from "../dashboard/Form"; 
 
 export default function QuickActions1() {
   const [showForm, setShowForm] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
 
-  // Cegah render modal di SSR
+  
   useEffect(() => {
     setIsMounted(true);
   }, []);
 
-  // Kunci scroll body saat modal terbuka
+  
   useEffect(() => {
     if (showForm) {
       document.body.style.overflow = "hidden";
@@ -46,13 +46,13 @@ export default function QuickActions1() {
         <button
           className="bg-[#97AEA1] text-[#496A71] p-6 rounded-2xl shadow hover:shadow-lg transition flex flex-col justify-between text-left"
           onClick={() => {
-            window.location.href = "/api/surat/export"; // ✅ trigger download Excel
+            window.location.href = "/api/surat/export"; 
           }}
         >
           <div>
-            <h3 className="text-lg font-bold mb-1">Export recent data</h3>
+            <h3 className="text-lg font-bold mb-1">Export data</h3>
             <p className="text-sm text-[#496A71]">
-              Export newly added letters in a downloadable file format.
+              Export added letters in a downloadable file format.
             </p>
           </div>
           <div className="mt-4 self-end">

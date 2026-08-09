@@ -42,9 +42,9 @@ export default function Navbar({ sidebarOpen, setSidebarOpen }) {
 
       {/* User Info */}
       <div className="col-span-10 flex justify-end items-center gap-2 truncate">
-        <p className="truncate">Hi, Anaxagoras!</p>
+        <p className="truncate">Hi, User!</p>
         <img
-          src="/images/anaxa icon.png"
+          src="/images/user-3296_1024.png"
           alt="User profile"
           className="w-12 h-12 rounded-full object-cover"
         />
